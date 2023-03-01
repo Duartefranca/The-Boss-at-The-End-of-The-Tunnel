@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <link href="/docs/assets/font/Pixelig Cursief.ttf" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <audio
+      id="my_audio"
+      src="./docs/assets/sounds/cave_dungeon_secret_temle-18374.mp3"
+      loop="loop"
+    ></audio>
+    <script>
+      window.onload = function () {
+        document.getElementById("my_audio").play();
+      };
+    </script>
+    <div>
+      <img
+        src="./docs/assets/Images/GameTitle.png"
+        alt="game title"
+        id="game-title"
+      />
+    </div>
+    <div id="canvas-screen" class="visibility">
+      <canvas
+        id="canvas"
+        height="600px"
+        width="1200px"
+        style="border: 10px solid black"
+      ></canvas>
+    </div>
+
+    <div id="start-button">
+      <button>
+        <img
+          src="./docs/assets/Images/startButton.png"
+          alt="start button"
+          id="start-button__image"
+        />
+      </button>
+      <div>
+        <img
+          src="./docs/assets/Images/donotpress.png"
+          alt="do not press"
+          id="doNotPress"
+        />
+      </div>
+    </div>
+
+    <div id="controls" class="visibility">
+      <img src="./docs/assets/Images/controls.png" alt="controls" />
+    </div>
+
+    <div id="reset-button" class="visibility">
+      <button>
+        <img
+          src="./docs/assets/Images/home-screen-button.png"
+          alt="home screen button"
+          id="reset-button__home"
+        />
+      </button>
+    </div>
+    <script src="scripts/sounds.js"></script>
+    <script src="scripts/components.js"></script>
+    <script src="scripts/Mage.js"></script>
+    <script src="scripts/enemies.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

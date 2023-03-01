@@ -1,0 +1,87 @@
+/* 
+color button: C09A04
+color glow: 006080 
+glowsize: 163, 51
+
+*/
+
+@font-face {
+  font-family: pixelig_cursiefregular;
+  src: url("../docs/assets/font/Pixelig Cursief.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../docs/assets/Images/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#canvas-screen {
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20vh;
+  left: 50vh;
+  font-family: pixelig_cursiefregular;
+  color: #03a2d7;
+}
+
+#game-title {
+  width: 80vw;
+}
+
+.visibility {
+  visibility: hidden;
+  display: none;
+}
+
+#controls {
+  position: absolute;
+  left: 30px;
+  bottom: 175px;
+}
+
+#start-button {
+  position: absolute;
+  top: 480px;
+  right: 60px;
+}
+
+#start-button > button {
+  background-color: transparent;
+  border: none;
+  padding-top: 10px;
+}
+
+#doNotPress {
+  position: absolute;
+  opacity: 0.6;
+  top: -25px;
+  rotate: -20deg;
+  left: -100px;
+  height: 40px;
+  width: 200px;
+}
+
+#start-button__image {
+  width: 20vw;
+}
+
+#reset-button {
+  position: absolute;
+  left: 38vw;
+  top: 63vh;
+}
+
+#reset-button > button {
+  border: none;
+  background-color: transparent;
+}
+
+#reset-button__home {
+  height: 12vh;
+  z-index: 1;
+}
